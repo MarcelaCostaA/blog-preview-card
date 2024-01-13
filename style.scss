@@ -1,0 +1,175 @@
+/* Variáveis */
+/* Fontes do Google */
+$fonte: "Figtree", sans-serif;
+
+/* Cores */
+$cor-yellow: hsl(47, 88%, 63%);
+$cor-white: hsl(0, 0%, 100%);
+$cor-grey: hsl(0, 0%, 50%);
+$cor-black: hsl(0, 0%, 7%);
+
+/* Reset CSS */
+/* Box sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Margem default */
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin-block-end: 0;
+}
+
+/* Removendo estilos de listas */
+ul[role='list'], ol[role='list'] {
+    list-style: none;
+}
+
+/* Padrões para body */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Elementos sem classes receberão estilos default */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Pré-configurações de imagens */
+img, picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Media Query */
+@media only screen and (max-width: 375px) {
+.card {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    -webkit-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+}
+}
+
+/* Estilização principal */
+body {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+    background: $cor-yellow;
+    font-family: $fonte;
+    font-weight: 600;
+    text-align: center;
+    font-optical-sizing: auto;
+}
+
+.card {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: left;
+    max-width: 375px;
+    min-width: 295px;
+    padding: 1.35rem;
+    background: $cor-white;
+    color: $cor-black;
+    border-radius: 1.25rem;
+    border: 1px solid black;
+    text-align: left;
+    -webkit-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+    box-shadow: 16px 16px 0px 0px rgba(0,0,0,1);
+}
+
+.image-card {
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background: $cor-yellow;
+    padding: 0.5rem 1rem;
+    max-width: fit-content;
+    color: $cor-black;
+    font-family: $fonte;
+    font-size: 0.85rem;
+    font-weight: 800;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    opacity: 0.75;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btn:active {
+    background: $cor-black;
+    color: $cor-white;
+    transition: color 0.3s ease-in-out;
+}
+
+.public {
+    color: $cor-black;
+    font-family: $fonte;
+    font-size: 0.85rem;
+}
+
+h1 {
+    font-size: 1.45rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+h1:hover {
+    opacity: 0.75;
+    transition: opacity 0.1s ease-in;
+}
+
+h1:active {
+    color: $cor-yellow;
+    transition: color 0.1s ease-in-out;
+}
+
+.apresent {
+    color: $cor-grey;
+    font-family: $fonte;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.professor {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.professor .prof-image {
+    width: 2rem;
+    height: 2rem;
+}
+
+.professor .prof-link {
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: black;
+    align-self: center;
+}
+
+.attribution {
+    font-family: $fonte;
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+    font-family: inherit;
+    color: hsl(228, 45%, 44%); 
+}
